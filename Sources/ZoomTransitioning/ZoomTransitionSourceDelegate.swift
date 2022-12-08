@@ -18,7 +18,7 @@ public protocol ZoomTransitionSourceDelegate {
     func zoomAnimation(animations: @escaping () -> Void, completion: ((Bool) -> Void)?)
 }
 
-extension ZoomTransitionSourceDelegate {
+public extension ZoomTransitionSourceDelegate {
     var animationDuration: TimeInterval { return 0.3 }
     func transitionSourceWillBegin() {}
     func transitionSourceDidEnd() {}
